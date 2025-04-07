@@ -104,7 +104,7 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-evenly;
-      /* justify-content: right; */
+      align-items: center;
       height: 600px;
       transition: all 0.8s;
       color: #8E05C2;
@@ -389,3 +389,33 @@
       background-color: #fff;
   }
 
+
+  @media screen and (max-width:540px){
+    body{
+        /* display: flex;
+        justify-content: center;
+        align-items: center; */
+        height: 100vh;
+        /* flex-direction: auto; */
+    }
+    .intro{
+        flex-direction: column-reverse !important;
+    }
+    .intro .mask {
+        width: 80%;
+        /* -webkit-mask-image: url(./src/blob\ \(1\).svg); */
+        /* mask-image: url(./src/blob\ \(1\).svg); */
+        /* mask-repeat: no-repeat; */
+   }
+    .myText{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    #about .myImg{
+        margin: 10px 0px;
+        width: 100%;
+    }
+  }
